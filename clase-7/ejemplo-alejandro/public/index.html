@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Formularios</h1>
+
+    <form action="http://localhost:3000/personas" method="POST">
+        <fieldset>
+            <legend>Personas</legend>
+            <input type="text" name="nombre", placeholder="Nombre" required>
+            <input type="text" name="apellido", placeholder="Apellido" required>
+            <input type="number" name="edad", placeholder="Edad" required>
+            <input type="submit">
+        </fieldset>
+
+    </form>
+    <br><br>
+    <hr>
+
+    <br><br>
+    <form action="http://localhost:3000/mascotas" method="POST">
+        <fieldset>
+            <legend>Mascotas</legend>
+            <input type="text" name="nombre", placeholder="Nombre" required>
+            <input type="text" name="raza", placeholder="Raza" required>
+            <input type="number" name="edad", placeholder="Edad" required>
+            <input type="submit">
+        </fieldset>
+
+    </form>
+
+    
+</body>
+</html>
