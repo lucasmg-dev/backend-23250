@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="messages"></div>
+    <form>
+      <div>
+        <input type="text" placeholder="Author" name="author" />
+        <input type="text" placeholder="Message" name="message" />
+        <button>Enviar!</button>
+      </div>
+    </form>
+
+    <div id="messages-tpl" style="display: none">
+      {{#each messages}}
+      <div>
+        <strong>{{this.author}}:</strong>
+        <em>{{ this.message }}</em>
+      </div>
+      {{/each}}
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

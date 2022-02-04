@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Desafio de la Clase 8</title>
+  </head>
+
+  <body>
+    <h1>Formulario: Alta de Producto</h1>
+
+    <form style="width: 400px" method="post" id="form-add-product">
+      <fieldset
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <legend>Nuevo Producto</legend>
+
+        <div>
+          <div style="display: inline">Nombre :</div>
+          <div style="display: inline">
+            <input
+              style="padding: 3px; margin-bottom: 7px; border-radius: 5px"
+              type="text"
+              name="title"
+              placeholder="Ingresar nombre"
+              required
+            />
+          </div>
+        </div>
+        <div>
+          <div style="display: inline">Precio :</div>
+          <div style="display: inline">
+            <input
+              style="padding: 3px; margin-bottom: 7px; border-radius: 5px"
+              type="number"
+              name="price"
+              placeholder="Ingresar precio"
+              required
+            />
+          </div>
+        </div>
+        <div>
+          <div style="display: inline">Url de la imagen :</div>
+          <div style="display: inline">
+            <input
+              style="padding: 3px; margin-bottom: 7px; border-radius: 5px"
+              type="url"
+              name="thumbnail"
+              placeholder="Ingresar URL"
+              required
+            />
+          </div>
+        </div>
+        <div>
+          <input
+            style="padding: 5px 10px; margin-top: 15px; border-radius: 5px"
+            type="submit"
+            value="Agregar Producto"
+          />
+        </div>
+      </fieldset>
+    </form>
+
+    <div
+      id="list-products"
+      style="padding: 1rem; background: #ccc; width: 400px; margin-top: 1rem"
+    ></div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
