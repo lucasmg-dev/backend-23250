@@ -33,6 +33,11 @@ app.use(function (req, res, next) {
   next();
 });
 
+// app.use(function (req, res, next) {
+//   req.io = io;
+//   next();
+// });
+
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/api/productos", productosRouter);
@@ -57,6 +62,7 @@ app.siteTitle = "Desafio X";
 
 // error handler
 app.use(function (err, req, res, next) {
+  io;
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get("env") === "development" ? err : {};
