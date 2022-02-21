@@ -1,6 +1,5 @@
 {
   "name": "after",
-  "type": "module",
   "version": "1.0.0",
   "description": "- Router - multer - Import vs require - estructura de archivos - ejercicio 4 - Promesas Async/Await",
   "main": "index.js",

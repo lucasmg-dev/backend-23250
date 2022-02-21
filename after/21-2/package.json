@@ -1,9 +1,8 @@
 {
-  "name": "backend-23250",
-  "type": "module",
+  "name": "21-2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "promesa_knex.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,9 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@vscode/sqlite3": "^5.0.7",
-    "express": "^4.17.2",
     "knex": "^1.0.3",
-    "multer": "^1.4.4",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "sqlite3": "^5.0.2"
   }
 }
